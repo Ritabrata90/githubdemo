@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/png" href="logo.jpg"/>
+  <title>Krishi Suraksha | Sign Up</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+
+<body class="min-h-screen bg-cover bg-center bg-no-repeat" 
+      style="background-image: url('background.jpg'); font-family:'Work Sans','Noto Sans',sans-serif;">
+  
+  <!-- Dark overlay for readability -->
+  <div class="min-h-screen bg-black/50 flex items-center justify-center px-12">
+    <div class="w-full max-w-3xl text-white border-2 border-green-500 rounded-2xl shadow-xl p-10 my-12">
+      
+      <!-- App Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="logo.jpg" alt="Krishi Suraksha Logo" class="w-24 h-24 object-contain mix-blend-multiply"/>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-5xl font-extrabold text-center">Sign Up</h1>
+      <p class="text-xl text-center mt-2 mb-10">Create an account to protect your crops with AI</p>
+
+      <!-- Google Sign In -->
+      <a href="#" class="w-full flex items-center justify-center gap-3 h-14 bg-white/90 text-gray-900 rounded-lg font-semibold shadow hover:bg-white transition text-lg">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="w-6 h-6"/>
+        Sign In with Google
+      </a>
+
+      <!-- OR Divider -->
+      <div class="flex items-center gap-4 my-8">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="text-gray-200 text-base font-medium">OR</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+
+      <!-- Signup Form -->
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label class="block text-base font-medium">Full Name</label>
+          <input type="text" name="name" required class="mt-2 block w-full h-12 text-lg rounded-lg bg-white/90 text-black border-none focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label class="block text-base font-medium">Email</label>
+          <input type="email" name="email" required class="mt-2 block w-full h-12 text-lg rounded-lg bg-white/90 text-black border-none focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label class="block text-base font-medium">Phone Number</label>
+          <input type="tel" name="phone" required class="mt-2 block w-full h-12 text-lg rounded-lg bg-white/90 text-black border-none focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label class="block text-base font-medium">Password</label>
+          <input type="password" name="password" required class="mt-2 block w-full h-12 text-lg rounded-lg bg-white/90 text-black border-none focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <div>
+          <label class="block text-base font-medium">Confirm Password</label>
+          <input type="password" name="confirm" required class="mt-2 block w-full h-12 text-lg rounded-lg bg-white/90 text-black border-none focus:ring-green-500 focus:border-green-500"/>
+        </div>
+
+        <!-- Sign Up Button -->
+        <a href="2. login.html" class="w-full h-14 flex items-center justify-center bg-green-600 text-white text-lg rounded-lg font-bold hover:bg-green-700 transition">
+          Sign Up
+        </a>
+      </form>
+
+      <!-- OR Divider -->
+      <div class="flex items-center gap-4 my-8">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <span class="text-gray-200 text-base font-medium">OR</span>
+        <div class="flex-grow border-t border-gray-400"></div>
+      </div>
+
+      <!-- Guest Login -->
+      <a href="#" class="w-full h-14 flex items-center justify-center bg-gray-300/90 text-gray-900 text-lg rounded-lg font-bold hover:bg-gray-400 transition">
+        Sign In as a Guest
+      </a>
+
+      <!-- Login Redirect -->
+      <p class="text-center text-lg mt-8">
+        Already have an account? 
+        <a href="login.html" class="text-green-400 font-semibold hover:underline">Login & Continue</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

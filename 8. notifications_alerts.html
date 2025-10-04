@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+   <link rel="icon" type="image/png" href="logo.jpg"/>
+  <title>Krishi Suraksha | Notifications</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <style type="text/tailwindcss">
+    :root {
+      --primary-color: #ea2a33;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-green-100 via-amber-50 to-red-50">
+<div class="relative flex min-h-screen flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-10 bg-white shadow-sm">
+    <div class="flex items-center p-4">
+      <button onclick="history.back()" class="text-gray-700">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <h1 class="flex-1 text-center text-lg font-bold text-gray-900">Alerts</h1>
+      <div class="w-8"></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 overflow-y-auto p-4">
+    <section>
+      <h2 class="text-xl font-bold text-gray-800">Today</h2>
+      <div class="mt-4 space-y-4">
+        <!-- High Risk -->
+        <div class="flex items-start gap-4 rounded-lg border border-red-200 bg-red-50 p-4 shadow-sm">
+          <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-red-100 text-red-600">
+            <span class="material-symbols-outlined">dangerous</span>
+          </div>
+          <div class="flex-1">
+            <p class="text-base font-semibold text-red-800">High Risk</p>
+            <p class="text-sm text-red-700">Disease detected in tomato plants</p>
+          </div>
+          <span class="text-xs text-gray-500">10:45 AM</span>
+        </div>
+        <!-- Medium Risk -->
+        <div class="flex items-start gap-4 rounded-lg border border-amber-200 bg-amber-50 p-4 shadow-sm">
+          <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+            <span class="material-symbols-outlined">warning</span>
+          </div>
+          <div class="flex-1">
+            <p class="text-base font-semibold text-amber-800">Medium Risk</p>
+            <p class="text-sm text-amber-700">Pest infestation in cornfield</p>
+          </div>
+          <span class="text-xs text-gray-500">9:30 AM</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <h2 class="text-xl font-bold text-gray-800">Yesterday</h2>
+      <div class="mt-4 space-y-4">
+        <!-- Low Risk 1 -->
+        <div class="flex items-start gap-4 rounded-lg border border-yellow-200 bg-yellow-50 p-4 shadow-sm">
+          <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-yellow-600">
+            <span class="material-symbols-outlined">info</span>
+          </div>
+          <div class="flex-1">
+            <p class="text-base font-semibold text-yellow-800">Low Risk</p>
+            <p class="text-sm text-yellow-700">Nutrient deficiency in wheat crop</p>
+          </div>
+          <span class="text-xs text-gray-500">5:15 PM</span>
+        </div>
+        <!-- Low Risk 2 -->
+        <div class="flex items-start gap-4 rounded-lg border border-yellow-200 bg-yellow-50 p-4 shadow-sm">
+          <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-yellow-100 text-yellow-600">
+            <span class="material-symbols-outlined">info</span>
+          </div>
+          <div class="flex-1">
+            <p class="text-base font-semibold text-yellow-800">Low Risk</p>
+            <p class="text-sm text-yellow-700">Water stress in soybean field</p>
+          </div>
+          <span class="text-xs text-gray-500">11:00 AM</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <nav class="sticky bottom-0 border-t border-gray-200 bg-white">
+    <div class="flex justify-around px-4 py-2">
+      <a class="flex flex-col items-center gap-1 text-gray-500" href="4.home_screen.html">
+        <span class="material-symbols-outlined">home</span>
+        <p class="text-xs font-medium">Home</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="5. dashboard.html">
+        <span class="material-symbols-outlined">dashboard</span>
+        <p class="text-xs font-medium">Dashboard</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="6.crop_health_scan.html">
+        <span class="material-symbols-outlined">document_scanner</span>
+        <p class="text-xs font-medium">Scan</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-[var(--primary-color)]" href="7.farm_analytics_1.html">
+        <span class="material-symbols-outlined">bar_chart</span>
+        <p class="text-xs font-medium">Analytics</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="8. notifications_alerts.html">
+        <span class="material-symbols-outlined">notifications_active</span>
+        <p class="text-xs font-medium">Alerts</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="9. user_profile_settings.html">
+        <span class="material-symbols-outlined">person</span>
+        <span class="text-xs font-medium">Profile</span>
+      </a>
+    </div>
+  </nav>
+</div>
+</body>
+</html>

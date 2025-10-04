@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" type="image/png" href="logo.jpg"/>
+  <title>Krishi Suraksha | Login</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+<body class="min-h-screen bg-cover bg-center flex items-center justify-center px-6" 
+      style="background-image: url('background.jpg'); font-family:'Work Sans','Noto Sans',sans-serif;">
+  
+  <div class="w-full max-w-md bg-white/90 backdrop-blur-md shadow-lg rounded-2xl p-8">
+    <!-- App Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="logo.jpg" alt="Krishi Suraksha Logo" class="w-24 h-24 object-contain mix-blend-multiply"/>
+    </div>
+
+    <h1 class="text-2xl font-bold text-center text-gray-900">Welcome Back</h1>
+    <p class="text-gray-600 text-center mt-2 mb-6">Log in to continue</p>
+
+    <form action="#" method="POST" class="space-y-5">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" name="email" class="mt-1 block w-full rounded-lg border-gray-300 focus:ring-green-500 focus:border-green-500"/>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" name="password" class="mt-1 block w-full rounded-lg border-gray-300 focus:ring-green-500 focus:border-green-500"/>
+      </div>
+
+      <a href="4. home_screen.html" class="w-full h-12 flex items-center justify-center bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition">
+        Log In
+      </a>
+    </form>
+
+    <p class="text-center text-gray-600 text-sm mt-6">
+      Don’t have an account? 
+      <a href="3. signup.html" class="text-green-600 font-medium hover:underline">Sign Up</a>
+    </p>
+  </div>
+</body>
+</html>

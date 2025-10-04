@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <!--Title -->
+  <title>Krishi Suraksha | Dashboard</title>
+  <link rel="icon" type="image/png" href="logo.jpg"/>  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+      background: url("background2.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .dashboard-card img {
+        max-height: 80px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .dashboard-card img {
+        max-height: 60px;
+      }
+      .dashboard-card h2 {
+        font-size: 1rem;
+      }
+      .dashboard-card p {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between bg-green-900 bg-opacity-80 text-white px-4 py-3 shadow">
+    <h1 class="text-xl font-bold">Dashboard</h1>
+    <span class="material-symbols-outlined">settings</span>
+  </div>
+
+  <!-- Dashboard Content -->
+  <div class="flex-1 p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+
+      <!-- Overview -->
+      <a href="home_screen.html" 
+         class="dashboard-card w-full min-h-[150px] bg-sky-600 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">dashboard</span>
+        <h2 class="font-bold text-lg mt-2">Overview</h2>
+        <img src="overview.png" alt="Overview" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">Get a quick summary of your crop health, alerts & stats.</p>
+      </a>
+
+      <!-- Recent Alerts -->
+      <div class="dashboard-card w-full min-h-[150px] bg-red-500 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">notifications_active</span>
+        <h2 class="font-bold text-lg mt-2">Recent Alerts</h2>
+        <img src="recent_alert.webp" alt="Alerts" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">View recent disease & weather alerts for your crop.</p>
+      </div>
+
+      <!-- Key Statistics -->
+      <div class="dashboard-card w-full min-h-[150px] bg-green-600 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">query_stats</span>
+        <h2 class="font-bold text-lg mt-2">Key Statistics</h2>
+        <img src="key statistics.webp" alt="Statistics" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">View your crop health stats, disease trends & more.</p>
+      </div>
+
+      <!-- Profile -->
+      <div class="dashboard-card w-full min-h-[150px] bg-blue-500 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">person</span>
+        <h2 class="font-bold text-lg mt-2">Profile</h2>
+        <img src="profile.png" alt="Profile" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">Manage your profile & settings.</p>
+      </div>
+
+      <!-- Help & Support -->
+      <div class="dashboard-card w-full min-h-[150px] bg-amber-600 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">help</span>
+        <h2 class="font-bold text-lg mt-2">Help & Support</h2>
+        <img src="help_support.webp" alt="Help" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">Get help, FAQs & contact support.</p>
+      </div>
+
+      <!-- About Us -->
+      <div class="dashboard-card w-full min-h-[150px] bg-purple-600 text-white p-4 rounded-xl shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col items-start">
+        <span class="material-symbols-outlined text-4xl">info</span>
+        <h2 class="font-bold text-lg mt-2">About Us</h2>
+        <img src="about_us.jpg" alt="About Us" class="w-full h-28 object-contain mt-2 rounded-lg"/>
+        <p class="text-sm mt-2">Learn more about the project & team.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Navigation -->
+  <footer class="sticky bottom-0 bg-white bg-opacity-95 border-t border-gray-300">
+    <div class="flex flex-wrap justify-around py-2">
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-green-700 transition" href="4. home_screen.html">
+        <span class="material-symbols-outlined">home</span>
+        <p class="text-xs font-medium">Home</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-green-700" href="5. dashboard.html">
+        <span class="material-symbols-outlined">dashboard</span>
+        <p class="text-xs font-bold">Dashboard</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-green-700 transition" href="6. crop_health_scan.html">
+        <span class="material-symbols-outlined">photo_camera</span>
+        <p class="text-xs font-medium">Scan</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-green-700 transition" href="7.farm_analytics_1.html">
+        <span class="material-symbols-outlined">analytics</span>
+        <p class="text-xs font-medium">Analytics</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-green-700 transition" href="8. notifications_alerts.html">
+        <span class="material-symbols-outlined">notifications</span>
+        <p class="text-xs font-medium">Alerts</p>
+      </a>
+      <a class="flex flex-col items-center gap-1 text-gray-500 hover:text-green-700 transition" href="9. user_profile_settings.html">
+        <span class="material-symbols-outlined">person</span>
+        <p class="text-xs font-medium">Profile</p>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
